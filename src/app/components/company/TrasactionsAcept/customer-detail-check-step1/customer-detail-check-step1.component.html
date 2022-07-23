@@ -1,0 +1,60 @@
+
+    <div class="row">
+    <div class="col-sm-3 px-1">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+      
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+      
+          </div>
+        
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-sm-9">
+        <div class="container ">
+
+            <div class="table-sm-responsive" style="overflow: auto;">
+                <table class="table  table-hover ">
+                    <thead>
+                        <tr>
+                            <th>merchant description</th>
+                            <th>Product Code</th>
+                            <th>Quantity</th>
+                            <th>Retail Price</th>
+                            <th>Gov Price</th>
+                            <th>Amouny</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let data1 of customerDetail">
+                        <tr>
+
+                            <td>{{data1.MerchantDescription}}</td>
+                            <td>{{data1.ProductCode}}</td>
+                            <td>{{data1.Quantity}}</td>
+                            <td>{{data1.ReatilPrice}}</td>
+                            <td>{{data1.GovPrice}}</td>
+                            <td>{{data1.Amount}}</td>
+                            <td><input type="button" class="btn btn-sm btn-dark mx-1 px-2"  value="Dispute" >
+                                <input type="button" class="btn btn-sm btn-primary mx-1 px-2"  value="Accept" ></td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

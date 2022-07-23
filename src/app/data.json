@@ -1,0 +1,203 @@
+[
+  {
+    "id": 1,
+    "Date": "09/25/21",
+    "MerchInvoice": "123456",
+    "Merchant": "ABC fuel company",
+    "Location": "Miami",
+    "ICAOIATA": "KMIA/MIA",
+    "DoDAAC":"FP217",
+    "Tall":"SF567E",
+    "Item":"fuel service",
+    "Total":"8,699.50",
+    "Card":"AIR",
+    "Status":"New",
+    "CustomerDetail":
+    [
+      {
+        "MerchantDescription": "jetA",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      },
+      {
+        "MerchantDescription": "jetb",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "Date": "09/25/21",
+    "MerchInvoice": "123456",
+    "Merchant": "ABC fuel company",
+    "Location": "Miami",
+    "ICAOIATA": "KMIA/MIA",
+    "DoDAAC":"FP217",
+    "Tall":"SF567E",
+    "Item":"fuel service",
+    "Total":"8,699.50",
+    "Card":"AIR",
+    "Status":"New",
+    "customerDetail":
+    [
+      {
+        "MerchantDescription": "jetA",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      },
+      {
+        "MerchantDescription": "jetb",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "Date": "09/25/21",
+    "MerchInvoice": "123456",
+    "Merchant": "ABC fuel company",
+    "Location": "Miami",
+    "ICAOIATA": "KMIA/MIA",
+    "DoDAAC":"FP217",
+    "Tall":"SF567E",
+    "Item":"fuel service",
+    "Total":"8,699.50",
+    "Card":"AIR",
+    "Status":"Reject",
+    "customerDetail":
+    [
+      {
+        "MerchantDescription": "jetA",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      },
+      {
+        "MerchantDescription": "jetb",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "Date": "09/25/21",
+    "MerchInvoice": "123456",
+    "Merchant": "ABC fuel company",
+    "Location": "Miami",
+    "ICAOIATA": "KMIA/MIA",
+    "DoDAAC":"FP217",
+    "Tall":"SF567E",
+    "Item":"fuel service",
+    "Total":"8,699.50",
+    "Card":"AIR",
+    "Status":"Reject",
+    "customerDetail":
+    [
+      {
+        "MerchantDescription": "jetA",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      },
+      {
+        "MerchantDescription": "jetb",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "Date": "09/25/21",
+    "MerchInvoice": "123456",
+    "Merchant": "ABC fuel company",
+    "Location": "Miami",
+    "ICAOIATA": "KMIA/MIA",
+    "DoDAAC":"FP217",
+    "Tall":"SF567E",
+    "Item":"fuel service",
+    "Total":"8,699.50",
+    "Card":"AIR",
+    "Status":"Reject",
+    "customerDetail":
+    [
+      {
+        "MerchantDescription": "jetA",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      },
+      {
+        "MerchantDescription": "jetb",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "Date": "09/25/21",
+    "MerchInvoice": "123456",
+    "Merchant": "ABC fuel company",
+    "Location": "Miami",
+    "ICAOIATA": "KMIA/MIA",
+    "DoDAAC":"FP217",
+    "Tall":"SF567E",
+    "Item":"fuel service",
+    "Total":"8,699.50",
+    "Card":"AIR",
+    "Status":"Reject",
+    "customerDetail":
+    [
+      {
+        "MerchantDescription": "jetA",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      },
+      {
+        "MerchantDescription": "jetb",
+        "ProductCode": "5641654",
+        "Quantity": "654",
+        "ReatilPrice":"4.56",
+        "GovPrice":"4.76",
+        "Amount":"8,632.14"
+      }
+    ]
+  }
+
+ 
+ 
+]

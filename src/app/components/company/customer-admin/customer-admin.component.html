@@ -1,0 +1,86 @@
+<body class="bg-light">
+
+
+    <div class="container">
+
+        <div class="my-2 p-1 bg-white rounded box-shadow">
+            <div class="row py-2 mb-2">
+                <div class="d-flex justify-content-start">
+                    <div class="col-sm-8 col-lg-8">
+                        <div class="input-group rounded">
+                            <span class="input-group-text border-0" id="search-addon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input type="search" class="form-control rounded"
+                                placeholder="Search transactions ,Invoices, cards, or merchants" aria-label="Search"
+                                aria-describedby="search-addon" />
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-lg-1 px-3 iconsheader">
+                        <i class="bi bi-bell "></i>
+                    </div>
+                    <div class="col-sm-1 col-lg-1  iconsheader">
+                        <i class="bi bi-wifi"></i>
+                    </div>
+                    <div class="col-sm-2 col-lg-2 px-2 ">
+                        <div class="d-flex justify-content-end">
+                            <h4 class="fs-4 align-items-center text-black mb-0">
+                                Test &nbsp;
+                                <i class="bi bi-person-square"></i>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-header my-2 p-5  rounded box-shadow">
+            <div class="row">
+                <div class="d-flex justify-content-around">
+                    <div class="col-sm-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-around align-items-sm-center">
+                                    <div class="col-sm-7">
+                                        <h2 class="card-title text-center">Accept Transactions<br>6</h2>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <p class="card-text text-color text-center">New &nbsp; &nbsp; 6</p>
+                                        <p class="card-text text-color text-center">Disputed &nbsp; &nbsp; 0</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-around align-items-sm-center">
+                                    <div class="col-sm-77">
+                                        <h2 class="card-title text-center">Invoice Tasks<br>3</h2>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <p class="card-text text-color text-center">New &nbsp; &nbsp; 6</p>
+                                        <p class="card-text text-color text-center">Disputed &nbsp; &nbsp; 0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<h1  class="py-3" >
+<p class="font-weight-bold"> Current Transactions</p>
+</h1>
+
+        <tabset #tabset>
+            <tab class="tabtittle" heading="6 Transactions to Accept">
+                <app-customer-detail-step1 [data]="listDatatable"></app-customer-detail-step1>
+            </tab>
+            <tab class="tabtittle" heading="42 Transactions to Review">Tab 2 content</tab>
+        </tabset>
+    </div>
+</body>

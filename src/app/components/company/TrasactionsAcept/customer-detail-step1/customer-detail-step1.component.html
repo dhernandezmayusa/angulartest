@@ -1,0 +1,95 @@
+<div class="container-fluid ">
+    <div class="my-2 p-1 bg-white rounded box-shadow">
+        <div class="row py-3 mb-2">
+            <div class="d-flex justify-content-start">
+                <div class="col-sm-6 col-lg-7 px-3">
+                    <div class="input-group rounded">
+                        <span class="input-group-text border-0" id="search-addon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="search" class="form-control rounded"
+                            placeholder="Search transactions by Merchant Invoice, Card,ICAQ,Tail # or DoDAAC"
+                            aria-label="Search" aria-describedby="search-addon" />
+                    </div>
+                </div>
+                <div class="col-sm-1 col-lg-1 px-1">
+                    <button type="button" class="btn btn-light"><i class="bi bi-funnel-fill"></i> &nbsp;Filter</button>
+                </div>
+
+                <div class="col-sm-2 col-lg-2 px-3" >
+                    <button type="button" class="btn btn-light"><i class="bi bi-printer-fill"></i>&nbsp; Print Selected</button>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <div class="col-sm-2 col-lg-12 px-1">
+                        <button type="button" class="btn btn-light"><i class="bi bi-cloud-arrow-down-fill"></i> &nbsp; Export Selected</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <div class="table-responsive" style="overflow: auto;">
+                <table class="table  table-hover ">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>id</th>
+                            <th>Date</th>
+                            <th>MerchInvoice</th>
+                            <th>Merchant</th>
+                            <th>Location</th>
+                            <th>ICAOIATA</th>
+                            <th>DoDAAC</th>
+                            <th>Tall</th>
+                            <th>Item</th>
+                            <th>Total</th>
+                            <th>Card</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody
+                        *ngFor="let data1 of customerMains | paginate:{itemsPerPage:CantPorPage , currentPage:PageActual}">
+                        <tr class="accordion-toggle collapsed" id="accordion1" data-toggle="collapse"
+                            data-parent="#accordion1" href="#collapseOne">
+
+
+                            <td class="expand-button" (click)="data1.Expanded = !data1.Expanded"></td>
+                            <td>{{data1.id}}</td>
+                            <td>{{data1.Date}}</td>
+                            <td>{{data1.MerchInvoice}}</td>
+                            <td>{{data1.Merchant}}</td>
+                            <td>{{data1.Location}}</td>
+                            <td>{{data1.ICAOIATA}}</td>
+                            <td>{{data1.DoDAAC}}</td>
+                            <td>{{data1.Tall}}</td>
+                            <td>{{data1.Item}}</td>
+                            <td>{{data1.Total}}</td>
+                            <td>{{data1.Card}}</td>
+                            <td>{{data1.Status}}</td>
+
+
+                        </tr>
+
+
+                        <ng-container *ngIf="data1.Expanded">
+                            <tr>
+                                <td colspan="13">
+                                    <div class="container-fluid">
+                                        <app-customer-detail-check-step1 [dataDetail]="get(data1)">
+                                        </app-customer-detail-check-step1>
+                                    </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-between py-3"><a>Total Registros Encontrados : {{total}}</a>
+                <pagination-controls (pageChange)="PageActual=$event"></pagination-controls>
+            </div>
+        </div>
+    </div>
+</div>
